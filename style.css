@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
+
+/* ================= RESET ================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ================= BASE ================= */
+body {
+    font-family: 'Inter', sans-serif;
+    background: #05070c;
+    color: #e5e7eb;
+    line-height: 1.7;
+}
+
+a {
+    color: #3b82f6;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* ================= NAV ================= */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 28px 64px;
+}
+
+.logo {
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.logo span {
+    color: #3b82f6;
+}
+
+.nav-btn {
+    padding: 10px 18px;
+    border-radius: 6px;
+    font-weight: 500;
+}
+
+.nav-btn:hover {
+    background: rgba(59, 130, 246, 0.1);
+}
+
+/* ================= HERO ================= */
+.hero {
+    padding: 150px 64px 120px;
+    max-width: 920px;
+}
+
+.hero h1 {
+    font-size: 3.2rem;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 22px;
+}
+
+.hero p {
+    max-width: 640px;
+    color: #9ca3af;
+    font-size: 1.05rem;
+    margin-bottom: 40px;
+}
+
+.primary-btn {
+    display: inline-block;
+    padding: 14px 32px;
+    background: #3b82f6;
+    color: #fff;
+    border-radius: 8px;
+    font-weight: 500;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.primary-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 14px 32px rgba(59, 130, 246, 0.35);
+}
+
+/* ================= SECTIONS ================= */
+.section {
+    padding: 120px 64px;
+    max-width: 1100px;
+}
+
+.section h2 {
+    font-size: 2.2rem;
+    font-weight: 600;
+    margin-bottom: 48px;
+}
+
+/* ================= SERVICES GRID ================= */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 32px;
+}
+
+.card {
+    background: linear-gradient(180deg, #0b1020, #080c1a);
+    padding: 34px;
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: transform 0.35s ease, box-shadow 0.35s ease, border 0.35s ease;
+}
+
+.card h3 {
+    font-size: 1.25rem;
+    color: #93c5fd;
+    margin-bottom: 14px;
+}
+
+.card p {
+    color: #cbd5f5;
+    font-size: 0.95rem;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 26px 56px rgba(59, 130, 246, 0.2);
+    border-color: rgba(59, 130, 246, 0.45);
+}
+
+/* ================= SERVICE SECTIONS ================= */
+.service-section {
+    padding: 120px 64px;
+}
+
+.service-box {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 60px 55px;
+    border-radius: 22px;
+    background: linear-gradient(135deg,
+            rgba(59, 130, 246, 0.15),
+            rgba(15, 23, 42, 0.88));
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow:
+        0 32px 80px rgba(0, 0, 0, 0.6),
+        inset 0 1px 0 rgba(255, 255, 255, 0.06);
+}
+
+.service-intro {
+    font-size: 1.05rem;
+    color: #c7d2fe;
+    margin-bottom: 30px;
+}
+
+.service-points {
+    list-style: none;
+}
+
+.service-points li {
+    padding-left: 26px;
+    position: relative;
+    margin-bottom: 14px;
+}
+
+.service-points li::before {
+    content: "▹";
+    position: absolute;
+    left: 0;
+    color: #60a5fa;
+}
+
+/* ================= HOW WE WORK ================= */
+.how-we-work {
+    background: linear-gradient(180deg, rgba(59, 130, 246, 0.05), transparent);
+}
+
+.section-intro {
+    max-width: 720px;
+    color: #9ca3af;
+    margin-bottom: 60px;
+}
+
+.process-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 30px;
+}
+
+.process-step {
+    background: #0b1020;
+    padding: 30px;
+    border-radius: 14px;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    transition: transform 0.3s ease, border 0.3s ease;
+}
+
+.process-step:hover {
+    transform: translateY(-6px);
+    border-color: rgba(59, 130, 246, 0.45);
+}
+
+.step-number {
+    font-size: 0.85rem;
+    color: #3b82f6;
+    margin-bottom: 10px;
+}
+
+/* ================= WHY APX ================= */
+.why-apx {
+    background: radial-gradient(circle at center, rgba(59, 130, 246, 0.05), transparent 65%);
+}
+
+.why-box {
+    background: linear-gradient(135deg,
+            rgba(59, 130, 246, 0.18),
+            rgba(139, 92, 246, 0.12),
+            rgba(15, 23, 42, 0.9));
+    padding: 70px 60px;
+    border-radius: 22px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    box-shadow: 0 40px 90px rgba(0, 0, 0, 0.65);
+}
+
+.why-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 50px;
+}
+
+.why-lead {
+    color: #c7d2fe;
+    font-size: 1.25rem;
+}
+
+.why-highlight {
+    font-size: 1.7rem;
+    color: #fff;
+    margin: 20px 0;
+}
+
+.why-points {
+    list-style: none;
+}
+
+.why-points li {
+    padding-left: 26px;
+    position: relative;
+    margin-bottom: 14px;
+}
+
+.why-points li::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    color: #60a5fa;
+}
+
+.why-closing {
+    margin-top: 50px;
+    font-size: 1.3rem;
+}
+
+/* ================= ABOUT / CONTACT BOX ================= */
+.soft-box {
+    max-width: 820px;
+    margin: 0 auto;
+    padding: 60px;
+    border-radius: 22px;
+    background: #0b1020;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.about-text {
+    color: #9ca3af;
+    font-size: 1.05rem;
+}
+
+/* ================= FORM ================= */
+.contact-form-section {
+    display: flex;
+    justify-content: center;
+}
+
+.form-wrapper {
+    max-width: 520px;
+    width: 100%;
+}
+
+.form-title {
+    margin-bottom: 40px;
+}
+
+.project-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.project-form label {
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+    color: #9ca3af;
+}
+
+.project-form input,
+.project-form textarea,
+.project-form select {
+    background: #0b1020;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 8px;
+    padding: 12px 14px;
+    color: #e5e7eb;
+    margin-bottom: 22px;
+}
+
+.project-form button {
+    align-self: center;
+    padding: 14px 34px;
+    background: #3b82f6;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* ================= FOOTER ================= */
+.footer {
+    padding: 50px 64px;
+    text-align: center;
+    color: #6b7280;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+
+    .nav,
+    .hero,
+    .section,
+    .footer {
+        padding-left: 28px;
+        padding-right: 28px;
+    }
+
+    .hero h1 {
+        font-size: 2.4rem;
+    }
+
+    .why-grid {
+        grid-template-columns: 1fr;
+    }
+}
